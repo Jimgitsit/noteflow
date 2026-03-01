@@ -1,0 +1,91 @@
+# =============================================================================
+# NoteFlow — .gitignore
+# Node.js + React + TypeScript Monorepo
+# =============================================================================
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ── Build Outputs ─────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+.next/
+.nuxt/
+.vite/
+*.tsbuildinfo
+
+# ── Environment Variables ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+# Keep .env.example files (they are safe templates)
+!.env.example
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Testing & Coverage ────────────────────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+
+# ── TypeScript ────────────────────────────────────────────────────────────────
+*.js.map
+*.d.ts.map
+
+# ── OS & Editor artifacts ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ── IDE / Editor configs ──────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Keep shared VSCode settings if desired:
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ── Package manager lock files (keep one, ignore others) ──────────────────────
+# This project uses npm — ignore yarn/pnpm locks
+yarn.lock
+pnpm-lock.yaml
+
+# ── Database ──────────────────────────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+
+# ── Vercel ────────────────────────────────────────────────────────────────────
+.vercel/
+
+# ── Railway ───────────────────────────────────────────────────────────────────
+.railway/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tgz
